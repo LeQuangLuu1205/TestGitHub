@@ -46,7 +46,7 @@ button:hover{
     background-color: white;
     border-radius: 6px;
     overflow: hidden;
-    animation: modalShow 0.2s linear;
+    animation: showModal 0.2s linear;
 }
 .modal__header{
     background-color: var(--pink-color);
@@ -84,13 +84,14 @@ button:hover{
 .hide{
     display: none;
 }
-@keyframes modalShow{
+
+@keyframes showModal{
     from{
-        top: -500px;
+        top: -200px;
         opacity: 0;
     }
     to{
-        top:0;
+        top: 0px;
         opacity: 1;
     }
 }
